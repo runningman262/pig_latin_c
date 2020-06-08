@@ -1,0 +1,7 @@
+C:\Users\kylem\OneDrive\Web Design\pig_latin_c\pig_latin\pig_latin\bin\Debug\pig_latin.exe.config
+C:\Users\kylem\OneDrive\Web Design\pig_latin_c\pig_latin\pig_latin\bin\Debug\pig_latin.exe
+C:\Users\kylem\OneDrive\Web Design\pig_latin_c\pig_latin\pig_latin\bin\Debug\pig_latin.pdb
+C:\Users\kylem\OneDrive\Web Design\pig_latin_c\pig_latin\pig_latin\obj\Debug\pig_latin.csprojAssemblyReference.cache
+C:\Users\kylem\OneDrive\Web Design\pig_latin_c\pig_latin\pig_latin\obj\Debug\pig_latin.csproj.CoreCompileInputs.cache
+C:\Users\kylem\OneDrive\Web Design\pig_latin_c\pig_latin\pig_latin\obj\Debug\pig_latin.exe
+C:\Users\kylem\OneDrive\Web Design\pig_latin_c\pig_latin\pig_latin\obj\Debug\pig_latin.pdb
