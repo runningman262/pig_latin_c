@@ -8,8 +8,6 @@ namespace pig_latin
 {
     class Program
     {
-        static int firstVowel;
-        static string pigLatinPhrase;
         static void Main(string[] args)
         {
             /*words beginning with consanants, 
@@ -38,11 +36,12 @@ namespace pig_latin
 
             }
 
+            string pigLatinPhrase;
             i = 0;
             foreach (var item in arrayPhrase)
             {
-                FindFirstVowel(arrayPhrase[i]);
-                ToPigLatin(arrayPhrase[i], firstVowel);
+                int startPos = FindFirstVowel(arrayPhrase[i]);
+                pigLatinPhrase = ToPigLatin(arrayPhrase[i], startPos);
                 Console.Write($"{pigLatinPhrase} ");
                 i++;
             }
@@ -50,29 +49,33 @@ namespace pig_latin
             Console.WriteLine();
         }
 
-        static void FindFirstVowel(string inputPhraseYay)
+        static int FindFirstVowel(string inputPhraseYay)
         {
             // need to find the first instance of a, e, i, o, or u.
             char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
-            firstVowel = inputPhraseYay.IndexOfAny(vowels);
+            int firstVowel = inputPhraseYay.IndexOfAny(vowels);
 
             //if no standard vowel is found, find and set y as the vowel.
             if (firstVowel == -1)
             {
-                firstVowel = inputPhraseYay.IndexOf("y");
-            }         
+                return inputPhraseYay.IndexOf("y");
+            }
+            else
+            {
+                return firstVowel;
+            }
         }
 
-        static void ToPigLatin(string inputPhraseYay, int start)
+        static string ToPigLatin(string inputPhraseYay, int start)
         {
-
             if (start == 0)
             {
-                pigLatinPhrase = inputPhraseYay + "yay";
+                return inputPhraseYay + "yay";
 
-            } else
+            } 
+            else
             {
-                pigLatinPhrase = inputPhraseYay.Substring(start) + inputPhraseYay.Substring(0, start) + "ay";
+                return inputPhraseYay.Substring(start) + inputPhraseYay.Substring(0, start) + "ay";
             }
         }
 
